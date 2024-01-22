@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiva="X-UA-Compatible" content="ie=edge">
+    <title>Css grid</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap:1rem;
+             grid-template-areas: "navbar navbar navbar navbar" 
+            "section section section aside"
+            "footer footer footer footer"; 
+
+        }
+        .item{
+            background-color: yellow;
+            border:3px solid black;
+            padding:12px 23px;
+        }
+        #navbar{
+            grid-area:navbar;
+
+        }
+        #section{
+            grid-area:section;
+        }
+        #aside{
+            grid-area:aside;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="container">
+     <div id="navbar"  class="item">
+
+        Home About Contact Us
+     </div>
+
+    <!-- div#navbar -->
+
+        <div id="section" class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aspernatur natus doloribus asperiores id dolorem exercitationem quasi repellendus error totam eveniet qui officiis ut accusamus minus sunt ab adipisci, fuga praesentium. Ex, maxime voluptate.</div>
+        <div id="navbar" class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum. Saepe magnam itaque eius dolor illo velit, ut nesciunt deleniti aspernatur obcaecati assumenda voluptatem, possimus dolores, nostrum alias? Maiores magni et inventore aliquam! Sed praesentium esse, non harum repellendus rerum?</div>
+        <div id="aside " class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur voluptates sunt vel animi, neque repellat corrupti ipsa maiores blanditiis expedita numquam natus cum molestiae inventore nulla molestias ipsam ullam consequatur laudantium. Enim.</div>
+          <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque perspiciatis ducimus, vero nam, molestias eum, error praesentium expedita voluptates consequuntur tempore illo dolores aspernatur? Non blanditiis sapiente optio repellat expedita. Voluptatibus, animi consequatur.</footer>
+
+        <!-- div.item{Item-$}*14 -->
+       <!-- <div class="item">Item-1</div>
+       <div class="item">Item-2</div>
+       <div class="item">Item-3</div>
+       <div class="item">Item-4</div>
+       <div class="item">Item-5</div>
+       <div class="item">Item-6</div>
+       <div class="item">Item-7</div>
+       <div class="item">Item-8</div>
+       <div class="item">Item-9</div>
+       <div class="item">Item-10</div>
+       <div class="item">Item-11</div>
+       <div class="item">Item-12</div>
+       <div class="item">Item-13</div>
+       <div class="item">Item-14</div> -->
+
+
+
+    </div>
+    
+</body>
+</html>
